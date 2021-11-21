@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <div class="menu-left">
+                <a href="index.html">Головна</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контактна форма</a>
+
+            </div>
+            <div class="menu-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="head">
+
+            <div class="bloc"></div>
+            <h1>Blog</h1>
+
+        </div>
+
+        <div class="blog-container">
+
+            <div class="blog-top">
+                <div class="categories">
+                    <h4>Категорії</h4>
+                    <div id="myBtnContainer">
+                        <button class="btn" onclick="filterSelection('sea')"> <p>море</p></button>
+                        <button class="btn" onclick="filterSelection('mountain')"> <p>гори</p></button>
+                        <button class="btn active" onclick="filterSelection('Europe')"> <p>Європа</p></button>
+                        <button class="btn active" onclick="filterSelection('nature')"> <p>природа</p></button>
+                        <button class="btn" onclick="filterSelection('animals')"> <p>дикі тварини</p></button>
+                        <button class="btn" onclick="filterSelection('arc')"> <p>архітектура</p></button>
+                        <button class="btn active" onclick="filterSelection('transport')"> <p>транспорт</p> </button>
+                        <button class="btn" onclick="filterSelection('airport')"> <p>аеропорт</p></button>
+                        <button class="btn" onclick="filterSelection('beach')"> <p>пляж</p></button>
+                        <button class="btn" onclick="filterSelection('forest')"> <p>ліс</p> </button>
+                        <button class="btn active" onclick="filterSelection('zoo')"> <p>зоопарк</p></button>
+                        <button class="btn" onclick="filterSelection('Asia')"> <p>Азія</p></button>
+                        <button class="btn" onclick="filterSelection('diving')"><p>дайвінг</p> </button>
+                
+                
+                    </div>
+                    <button class="butlink"> <a href="#">Вибрати всі</a> </button>
+
+
+                </div>
+                <div class="card">
+                    <img src="img/mountain.png" class="card-img-top" alt="mountain">
+                    <div class="card-bod">
+                        <h5 class="card-title">Назва блогу</h5>
+                        <p class="subtitle"> 22.09.2019 <i class="fas fa-circle"> </i> Alisa Happy</p>
+                        <p class="card-text">Марракеш - туристичний напрям №1 згідно з Travellers' Choice 2015 року. Це
+                            чарівне місце з безліччю ринків, садів, палаців та мечетей. Поки ви знайомитеся з тісними
+                            двориками та блукаєте вуличками історичної частини міста, день мине ...</p>
+                        <div class="button"> <button class="butlink"> <a href="#">Читати більше <i
+                                    class="fas fa-long-arrow-alt-right"></i></a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/girl.png" class="card-img-top" alt="girl and animals">
+                    <div class="card-bod">
+                        <h5 class="card-title">Назва блогу</h5>
+                        <p class="subtitle"> 22.09.2019 <i class="fas fa-circle"></i> Alisa Happy</p>
+                        <p class="card-text">Марракеш - туристичний напрям №1 згідно з Travellers' Choice 2015 року. Це
+                            чарівне місце з безліччю ринків, садів, палаців та мечетей. Поки ви знайомитеся з тісними
+                            двориками та блукаєте вуличками історичної частини міста, день мине ...</p>
+                            <div class="button"><button class="butlink"><a href="#">Читати більше <i
+                                    class="fas fa-long-arrow-alt-right"></i></a></button></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="blog-bottom">
+                <div class="card">
+                    <img src="img/beach.png" class="card-img-top" alt="beach">
+                    <div class="card-bod">
+                        <h5 class="card-title">Назва блогу</h5>
+                        <p class="subtitle"> 22.09.2019 <i class="fas fa-circle"></i> Alisa Happy </p>
+                        <p class="card-text">Марракеш - туристичний напрям №1 згідно з Travellers' Choice 2015 року. Це
+                            чарівне місце з безліччю ринків, садів, палаців та мечетей. Поки ви знайомитеся з тісними
+                            двориками та блукаєте вуличками історичної частини міста, день мине ...</p>
+                            <div class="button"><button class="butlink"><a href="#">Читати більше <i
+                                    class="fas fa-long-arrow-alt-right"></i></a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/girlinmountain.png" class="card-img-top" alt="mountain">
+                    <div class="card-bod">
+                        <h5 class="card-title">Назва блогу</h5>
+                        <p class="subtitle"> 22.09.2019 <i class="fas fa-circle"></i> Alisa Happy </p>
+                        <p class="card-text">Марракеш - туристичний напрям №1 згідно з Travellers' Choice 2015 року. Це
+                            чарівне місце з безліччю ринків, садів, палаців та мечетей. Поки ви знайомитеся з тісними
+                            двориками та блукаєте вуличками історичної частини міста, день мине ...</p>
+                            <div class="button"><button class="butlink"><a href="#">Читати більше <i
+                                    class="fas fa-long-arrow-alt-right"></i></a></button></div>
+                    </div>
+                </div>
+               
+                <div class="card">
+                    <img src="img/reef.png" class="card-img-top" alt="reef">
+                    <div class="card-bod">
+                        <h5 class="card-title">Назва блогу</h5>
+                        <p class="subtitle">22.09.2019 <i class="fas fa-circle"></i> Alisa Happy </p>
+                        <p class="card-text">Марракеш - туристичний напрям №1 згідно з Travellers' Choice 2015 року. Це
+                            чарівне місце з безліччю ринків, садів, палаців та мечетей. Поки ви знайомитеся з тісними
+                            двориками та блукаєте вуличками історичної частини міста, день мине ...</p>
+                            <div class="button"><button class="butlink"><a href="#">Читати більше <i
+                                    class="fas fa-long-arrow-alt-right"></i></a></button></div>
+                    </div>
+                </div>
+            </div>
+                
+            
+
+        </div> 
+
+
+        <div class="pages">
+            <div class="nav">
+                <a href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+            </div>
+
+        </div>
+        <div class="bottom">
+
+        </div>
+
+        
+
+
+
+
+
+    
+    
+    </div>
+
+
+    <script>
+
+
+
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/cfdf163de0.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
